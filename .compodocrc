@@ -1,0 +1,5 @@
+{
+  "name": "NullBoot - 后端文档",
+  "unitTestCoverage": "coverage/coverage-summary.json",
+  "disableInternal": true
+}

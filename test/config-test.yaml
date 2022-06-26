@@ -1,0 +1,19 @@
+server:
+  hostname: 0.0.0.0
+  port: 3000
+services:
+  database:
+    type: mariadb
+    host: nullboot-mariadb.null.secoder.local
+    port: 3306
+    username: test
+    password: test-pass
+    database: test
+  minio:
+    endpoint: http://backend-minio.null.secoder.local:9000/
+    userEndpoint: http://backend-minio.null.secoder.local:9000/
+    accessKey: test
+    secretKey: test-pass
+    bucket: test
+security:
+  jwtSecret: nullboot-jwt
