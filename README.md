@@ -2,9 +2,22 @@
 
 `PRJ2B` 新人培训系统 - 后端
 
-`null`小组：张艺缤 姚嘉宸 单敬博 张闰清 迟凯文
+Backend for NullBoot newcomer training system
 
-## Install
+`null` 小组：张艺缤 姚嘉宸 单敬博 张闰清 迟凯文
+
+Author: Yibin Zhang, Jiachen Yao, Jingbo Shan, Runqing Zhang, Kaiwen Chi
+
+## 技术栈 (Technology stack)
+
+- Language: `TypeScript`
+- Framework: `Nest.js`
+- Package manager: `yarn`
+- Database: `MariaDB` (`TypeORM`)
+- Storage: `MinIO`
+- API Documentation: `Swagger` (`./docs`)
+
+## 部署 (Deploy)
 
 Install packages:
 
@@ -29,7 +42,7 @@ CREATE DATABASE `nullboot` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode
 GRANT ALL PRIVILEGES ON `nullboot`.* TO "nullboot"@"%" IDENTIFIED BY "nullboooot";
 ```
 
-## Start
+### Start
 
 Specify configuration file through environment variable `CONFIG_FILE` and start in develop mode:
 
@@ -38,7 +51,7 @@ export CONFIG_FILE=./config.yaml
 yarn start:dev
 ```
 
-## Start & Lint
+### Lint
 
 ```shell
 yarn check-style  // prietter check
@@ -46,23 +59,14 @@ yarn format       // prietter format
 yarn lint         // eslint
 ```
 
-## Test
+### Test
 
 ```shell
 yarn test       // jest unit test
 yarn test:e2e   // jest end-to-end test 
 ```
 
-## 技术栈
-
-- 语言：`TypeScript`
-- 框架：`Nest.js`
-- 包管理器：`yarn`
-- 数据库：`MariaDB` (`TypeORM`)
-- 对象存储(*TODO*)：`MinIO`
-- API 文档：`Swagger` (`./docs`)
-
-## 参考文档
+## 参考文档 (Reference)
 
 - `NestJS`：[官方文档](https://docs.nestjs.com/) | [中文文档](https://docs.nestjs.cn/8/firststeps)
 - `TypeORM`：[官方文档](https://typeorm.io/#/) | [中文文档](https://typeorm.bootcss.com/)
